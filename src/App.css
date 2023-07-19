@@ -36,3 +36,411 @@
     transform: rotate(360deg);
   }
 }
+
+.App {
+  text-align: center;
+}
+
+body{
+  margin: 2% auto;
+  max-width: 1440px;
+  font-family: 'Inter';
+}
+
+/*modes*/
+
+.modes{
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  padding: 3% 10%;
+}
+.dark-mode{
+  background: #4731D3;
+  border: 1px solid #4731D3;
+  height: 4vh;
+  position: relative;
+  width: 4.5vw;
+  border-radius: 100px;
+  rotate: -180 deg;
+}
+
+.toggle {
+  background: #FFE86E;
+  border-radius: 50px;
+  height: 2vh;
+  position: relative;
+  left: 22px;
+  width: 2vh;
+  top: 15%;
+}
+.toggled {
+  left: 5px;
+}
+
+
+/*dark-style*/
+.dark .dark-mode{
+  background: #3A3A3A;
+  border: 1px solid #3A3A3A;
+}
+.dark .two{
+  border-radius: 100%;
+  background: #3A3A3A;
+  border: 1px solid #3A3A3A;
+  height: 2vh;
+  position: absolute;
+  width: 3vh;
+  left: 16%;
+  top: 18%;
+}
+.dark .mode-p p{
+  color: #D9D9D9;
+}
+.dark .line p{
+  color: #777777;
+}
+.dark .language p{
+  color: #BAB2E7;
+}
+.dark .language span{
+  color: #777777;
+}
+/*modes*/
+
+/*header*/
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 10%;
+}
+.header-logo{
+  background: #EEEBFF;
+  border-radius: 50%;
+  height: 62px;
+  width: 63px;
+  transform: rotate(30deg);
+  padding-top: 0.25rem;
+}
+.header-link{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+/*dark-mode*/
+.dark .here-me{
+  background: white;
+  text-align: center;
+}
+.dark .header-logo{
+  background: #4731D3;
+  text-align: center;
+}
+.dark .header-p{
+  color: #8F88FF;
+}
+/*header*/
+
+/*info*/
+.info{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3% 10%;
+}
+.info hr{
+width: 102px;
+border: 1px solid #3730A3;
+display: inline-block;
+}
+.info-left{
+  width: 55%;
+  margin-top: 3%;
+  text-align: left;
+}
+.buttons div{
+  display: inline-block;
+  margin-top: 4%;
+  margin-right: 2%;
+}
+.buttons svg{
+  display: inline-block;
+}
+.info-right{
+  width: 50%;
+  margin-top: 3%;
+}
+.info-right img{
+  width: 476px;
+  height: 375px;
+  border-radius: 18px;
+  margin-left: 20%;
+ 
+}
+/*dark-mode*/
+.dark .info hr{
+  border: 1px solid #BAB2E7;
+}
+.dark .info h4{
+  color: #B7AAFF;
+}
+.dark .info-left h1{
+  color: #AEBCCF;
+}
+.dark .info-left p{
+  color: #FFFFFF;
+}
+.dark .buttons button{
+  background: #E1E1FF;
+  color: #000000;
+  border-color: #E1E1FF;
+}
+.dark .buttons a{
+  color: #E1E1FF;
+  border-color: #E1E1FF;
+}
+.dark .logo-button{
+  border-color: #E1E1FF;
+}
+.dark .buttons path{
+  fill: #BAB2E7;
+}
+/*info*/
+
+h2{
+  display: flex;
+  font-size: 48px;
+  color: #1F2937;
+  font-weight: 600;
+  line-height: 48px;
+}
+
+.dark h2{
+  color: #AEBCCF;
+}
+.dark .skills h3, .dark .profile h3{
+  color: #B7AAFF;
+}
+body .dark p{
+  color: #FFFFFF;
+}
+
+/*skill*/
+.skills{
+  padding: 3% 10%;  
+}
+
+.skills-list{
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin-top: 3%;
+  gap: 120px;
+}
+
+.skills-list h3{
+  color: #4338CA;
+  font-size: 1.8rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 5%;
+}
+
+.skills-list p{
+  color: #6B7280;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 400;
+  padding-top: 3%;
+}
+
+
+/* profil */
+.profile{
+  padding: 3% 10%;
+}
+.profile hr, .projects hr{
+  width: 1134px;
+  border: 1px solid #BAB2E7;
+  display: inline-block;
+  margin-bottom: 3%;
+}
+.profile-container{
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  margin-top: 3%;
+  gap: 120px;
+}
+.profile-container h3{
+  color: #4338CA;
+  font-size: 1.8rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 5%;
+}
+.profile-ques p{
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 2.25rem;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #000000;
+}
+.profile-ans p{
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 2.25rem;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #000000;
+}
+.about p{
+  color: #6B7280;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  text-align: left;
+}
+
+/*projects*/
+
+.projects{
+  padding: 3% 10%;
+}
+
+.projects-list{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+  text-align: left;
+  gap: 120px;
+}
+
+.project-card{
+  width: 20rem;
+}
+
+.projects-list h3{
+  color: #4338CA;
+  font-size: 1.8rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 5%;
+  margin-top: 10%;
+}
+
+.projects-list p{
+  color: #6B7280;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1rem;
+  margin-bottom: 5%;
+}
+
+.projects-list img{
+  width: 300px;
+  height: 180px;
+}
+
+
+.links{
+  display: flex;
+  justify-content: space-between;
+  text-decoration: underline;
+  color: #3730A3;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1rem;
+  margin-top: 5%;
+}
+
+.contents{
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.contents p{
+  border: 1px solid #3730A3;
+  border-radius: 4px;
+  width: 68px;
+  height: 27px;
+  color: #3730A3;
+  text-align: center;
+  padding-top: 1.5%;
+}
+
+/*dark-mode*/
+.dark .projects h3{
+  color: #CFCBFF;
+}
+.dark .contents p{
+  background: #383838;
+  border-color: #8F88FF;
+  color: #8F88FF;
+}
+.dark .links{
+  color: #E1E1FF;
+}
+/*projects*/
+
+/*footer*/
+
+.footer{
+  padding: 5% 10%;
+  background-color: #F9F9F9;
+  height: 409px;
+}
+
+.footer h1{
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+  color: #1F2937;
+  text-align: left;
+  width: 55vh;
+  margin-bottom: 3%;
+}
+
+.footer-info{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-info p{
+  color:#AF0C48;
+  text-decoration: underline;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin-left: 1rem;
+}
+
+.footer-info span{
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.footer-info a{
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+  margin-left: 2rem;
+}
+ /*dark-mode*/
+ .dark .footer{
+  background: #141414;
+ }
+ .dark .footer h1{
+  color: #AEBCCF;
+ }
+ .dark .footer p{
+  color: #BAB2E7;
+ }
+ .dark .personal{
+  color: #E1E1FF
+ }
+/*footer*/
