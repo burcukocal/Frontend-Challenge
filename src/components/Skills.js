@@ -1,24 +1,42 @@
-import { data } from "../data/data";
+const Skills = ({ language, dataEn, dataTr }) => {
 
-const Skills = () => {
-
-    return(
+    return (
         <section className="skills">
-            <h2>{data.en.skillsTitle}</h2>
-            <div className="skills-list">
-            <div>
-                <h3>Java Script</h3>
-                <p>{data.en.skillsText}</p>
-            </div>
-            <div>
-                <h3>React.Js</h3>
-                <p>{data.en.skillsText}</p>
-            </div>
-            <div>
-                <h3>Node.Js</h3>
-                <p>{data.en.skillsText}</p>
-            </div>
-        </div>
+            {language === "en" ? (<h2 id="skills">{dataEn.skillsTitle}</h2>) : (<h2 id="skills">{dataTr.skillsTitle}</h2>)}
+
+            {language === "en" ?
+                (
+                    <div className="skills-list">
+                        <div>
+                            <h3>Java Script</h3>
+                            <p>{dataEn.skillsText1}</p>
+                        </div>
+                        <div>
+                            <h3>React.Js</h3>
+                            <p>{dataEn.skillsText2}</p>
+                        </div>
+                        <div>
+                            <h3>Node.Js</h3>
+                            <p>{dataEn.skillsText3}</p>
+                        </div>
+                    </div>
+                ) : (
+                    <div className="skills-list">
+                        <div className="skill-part">
+                            <h3>Java Script</h3>
+                            <p>{dataTr.skillsText1}</p>
+                        </div>
+                        <div className="skill-part">
+                            <h3>React.Js</h3>
+                            <p>{dataTr.skillsText2}</p>
+                        </div>
+                        <div className="skill-part">
+                            <h3>Node.Js</h3>
+                            <p>{dataTr.skillsText3}</p>
+                        </div>
+                    </div>
+                    )}
+
         </section>
     )
 

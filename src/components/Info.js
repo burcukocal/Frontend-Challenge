@@ -1,6 +1,4 @@
-import { data } from "../data/data";
-
-const Info = (language) => {
+const Info = ({ language, dataEn, dataTr }) => {
 
     return (
         <section className="info">
@@ -8,19 +6,19 @@ const Info = (language) => {
                 <div className="w-60">
                     <hr /><h4 className="text-xl font-medium text-[#4338CA] inline-block ml-3">Burcu Koçal</h4>
                 </div>
-                <div className="flex space-around">
+                <div className="info-group ">
                     <div className="info-left">
                         {language === "en" ?
                             (
                                 <div>
-                                    <h1 className="text-7xl font-bold mb-10">{data.en.infoTitle}</h1>
-                                    <p className="text-lg text-[#6B7280] font-normal">{data.en.infoText}</p>
+                                    <h1 className="text-7xl font-bold mb-10">{dataEn.infoTitle}</h1>
+                                    <p className="text-lg text-[#6B7280] font-normal">{dataEn.infoText}</p>
                                 </div>
                             ) :
                             (
                                 <div>
-                                    <h1 className="text-7xl font-bold mb-10">{data.tr.infoTitle}</h1>
-                                    <p className="text-lg text-[#6B7280] font-normal">{data.tr.infoText}</p>
+                                    <h1 className="text-7xl font-bold mb-10">{dataTr.infoTitle}</h1>
+                                    <p className="text-lg text-[#6B7280] font-normal">{dataTr.infoText}</p>
                                 </div>
                             )
                         }
@@ -28,12 +26,16 @@ const Info = (language) => {
                             {language === "en" ?
                                 (
                                     <div>
-                                        <button className="font-medium text-lg text-[#FFFFFF] bg-[#3730A3] border border-[#3730A3] border-solid rounded-md py-3 px-8">{data.en.hearMeButton}</button>
+                                        <a href="#profile">
+                                            <button className="font-medium text-lg text-[#FFFFFF] bg-[#3730A3] border border-[#3730A3] border-solid rounded-md py-3 px-8">{dataEn.hearMeButton}</button>
+                                        </a>
                                     </div>
                                 ) :
                                 (
                                     <div>
-                                        <button className="font-medium text-lg text-[#FFFFFF] bg-[#3730A3] border border-[#3730A3] border-solid rounded-md py-3 px-8">{data.tr.hearMeButton}</button>
+                                        <a href="#profile">
+                                            <button className="font-medium text-lg text-[#FFFFFF] bg-[#3730A3] border border-[#3730A3] border-solid rounded-md py-3 px-8">{dataTr.hearMeButton}</button>
+                                        </a>
                                     </div>
                                 )
                             }

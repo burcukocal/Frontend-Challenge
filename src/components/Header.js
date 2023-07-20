@@ -1,8 +1,6 @@
 import React from "react";
-import { data } from "../data/data";
 
-
-const Header = ({ language }) => {
+const Header = ({ language, dataEn, dataTr }) => {
 
     return (
         <section className="header">
@@ -15,16 +13,16 @@ const Header = ({ language }) => {
                 {language === "en" ? 
                 (
                     <div className="header-link text-lg text-[#6B7280] font-medium">
-                        <a href="#skills" className="py-3">{data.en.headerSkillsButton}</a>
-                        <a href="#project" className="py-3">{data.en.headerProjectsButton}</a>
-                        <a href="#Footer" className=" here-me font-medium text-[#3730A3] border border-[#3730A3] border-solid rounded-md py-3 px-8 w-40 h-15">{data.en.hearMeButton}</a>               
+                        <a href="#skills" className="py-3">{dataEn.headerSkillsButton}</a>
+                        <a href="#project" className="py-3">{dataEn.headerProjectsButton}</a>
+                        <a href="#profile" className=" here-me font-medium text-[#3730A3] border border-[#3730A3] border-solid rounded-md py-3 px-8 w-40 h-15">{dataEn.hearMeButton}</a>               
                     </div>
                 ): 
                 (
                     <div className="header-link text-lg text-[#6B7280] font-medium">
-                        <a href="#skills" className="py-3">{data.tr.headerSkillsButton}</a>
-                        <a href="#project" className="py-3">{data.tr.headerProjectsButton}</a>
-                        <a href="#Footer" className=" here-me font-medium text-[#3730A3] border border-[#3730A3] border-solid rounded-md py-3 px-8 w-40 h-15">{data.tr.hearMeButton}</a>               
+                        <a href="#skills" className="py-3">{dataTr.headerSkillsButton}</a>
+                        <a href="#project" className="py-3">{dataTr.headerProjectsButton}</a>
+                        <a href="#profile" className=" here-me font-medium text-[#3730A3] border border-[#3730A3] border-solid rounded-md py-3 px-8 w-40 h-15">{dataTr.hearMeButton}</a>               
                     </div>
                 )
             }

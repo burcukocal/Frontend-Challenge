@@ -1,8 +1,7 @@
 import React from "react";
-import { data } from "../data/data";
 import "../App.css";
 
-const Profile = ({ language }) => {
+const Profile = ({ language, dataEn, dataTr }) => {
 
     return (
         <section className="profile">
@@ -10,70 +9,70 @@ const Profile = ({ language }) => {
             {language === "en" ?
                 (
                     <div>
-                        <h2>{data.en.profileSection}</h2>
+                        <h2 id="profile">{dataEn.profileSection}</h2>
                         <div className="profile-container">
                             <div className="flex flex-col">
                                 <div>
-                                    <h3>{data.en.profileTitle}</h3>
+                                    <h3>{dataEn.profileTitle}</h3>
                                 </div>
 
                                 <div className="flex justify-between gap-12">
                                     <div className="profile-ques w-40">
-                                        <p>{data.en.birthday}</p>
-                                        <p>{data.en.residence}</p>
-                                        <p>{data.en.education}</p>
+                                        <p>{dataEn.birthday}</p>
+                                        <p>{dataEn.residence}</p>
+                                        <p>{dataEn.education}</p>
                                         <br />
-                                        <p>{data.en.role}</p>
+                                        <p>{dataEn.role}</p>
                                     </div>
                                     <div className="profile-ans w-80">
                                         <p>9.12.1997</p>
                                         <p>Kocaeli</p>
-                                        <p>{data.en.uni} {data.en.departmant} {data.en.degree}, 2019</p>
+                                        <p>{dataEn.uni} {dataEn.departmant} {dataEn.degree}, 2019</p>
                                         <p>Frontend, UI</p>
                                     </div>
                                 </div>
 
                             </div>
                             <div className="about w-3/5">
-                                <h3>{data.en.aboutTitle}</h3>
-                                <p>{data.en.aboutText1}</p>
+                                <h3>{dataEn.aboutTitle}</h3>
+                                <p>{dataEn.aboutText1}</p>
                                 <br />
-                                <p>{data.en.aboutText2}</p>
+                                <p>{dataEn.aboutText2}</p>
                             </div>
                         </div>
                     </div>
                 ) :
                 (
                     <div>
-                        <h2>{data.tr.profileSection}</h2>
+                        <h2 id="profile">{dataTr.profileSection}</h2>
                         <div className="profile-container">
                             <div className="flex flex-col">
                                 <div>
-                                    <h3>{data.tr.profileTitle}</h3>
+                                    <h3>{dataTr.profileTitle}</h3>
                                 </div>
 
                                 <div className="flex justify-betwetr gap-12">
                                     <div className="profile-ques w-40">
-                                        <p>{data.tr.birthday}</p>
-                                        <p>{data.tr.residence}</p>
-                                        <p>{data.tr.education}</p>
+                                        <p>{dataTr.birthday}</p>
+                                        <p>{dataTr.residence}</p>
+                                        <p>{dataTr.education}</p>
                                         <br />
-                                        <p>{data.tr.role}</p>
+                                        <p>{dataTr.role}</p>
                                     </div>
                                     <div className="profile-ans w-80">
                                         <p>9.12.1997</p>
                                         <p>Kocaeli</p>
-                                        <p>{data.tr.uni} {data.tr.departmant} {data.tr.degree}, 2019</p>
+                                        <p>{dataTr.uni} {dataTr.departmant} {dataTr.degree}, 2019</p>
                                         <p>Frontend, UI</p>
                                     </div>
                                 </div>
 
                             </div>
                             <div className="about w-3/5">
-                                <h3>{data.tr.aboutTitle}</h3>
-                                <p>{data.tr.aboutText1}</p>
+                                <h3>{dataTr.aboutTitle}</h3>
+                                <p>{dataTr.aboutText1}</p>
                                 <br />
-                                <p>{data.tr.aboutText2}</p>
+                                <p>{dataTr.aboutText2}</p>
                             </div>
                         </div>
                     </div>
