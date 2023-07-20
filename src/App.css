@@ -109,6 +109,10 @@ body{
   justify-content: space-evenly;
   padding: 3% 10%;
 }
+.info-group{
+  display: flex;
+  justify-content: space-around;
+}
 .info hr{
 width: 102px;
 border: 1px solid #3730A3;
@@ -132,8 +136,8 @@ display: inline-block;
   margin-top: 3%;
 }
 .info-right img{
-  width: 476px;
-  height: 375px;
+  width: 55vh;
+  height: 40vh;
   border-radius: 18px;
   margin-left: 20%;
  
@@ -412,3 +416,35 @@ body .dark p{
   color: #E1E1FF
  }
 /*footer*/
+
+
+
+/* responsive */
+@media screen and (max-width: 768px) {
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modes{
+    justify-content: center;
+  }
+  
+  .header, .header-link, .skills-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-right img{
+    margin: auto;
+  }
+  .info-group, .buttons, .profile-container, .projects-list, .footer-info, .footer-link{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about, .info-left p{
+    width: 55vh;
+  }
+
+}
