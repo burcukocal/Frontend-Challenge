@@ -19,9 +19,9 @@ body{
 .dark-mode{
   background: #4731D3;
   border: 1px solid #4731D3;
-  height: 4vh;
+  height: 24px;
   position: relative;
-  width: 4.5vw;
+  width: 60px;
   border-radius: 100px;
   rotate: -180 deg;
 }
@@ -29,11 +29,11 @@ body{
 .toggle {
   background: #FFE86E;
   border-radius: 50px;
-  height: 2vh;
+  height: 16px;
   position: relative;
-  left: 22px;
-  width: 2vh;
-  top: 15%;
+  left: 18px;
+  width: 15px;
+  top: 1px;
 }
 .toggled {
   left: 5px;
@@ -49,10 +49,10 @@ body{
   border-radius: 100%;
   background: #3A3A3A;
   border: 1px solid #3A3A3A;
-  height: 2vh;
+  height: 13px;
   position: absolute;
-  width: 3vh;
-  left: 16%;
+  width: 13px;
+  left: 20%;
   top: 18%;
 }
 .dark .mode-p p{
@@ -445,6 +445,10 @@ body .dark p{
   }
   .about, .info-left p{
     width: 55vh;
+  }
+  .footer-link{
+    margin-top: 20px;
+    gap: 20px;
   }
 
 }
